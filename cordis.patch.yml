@@ -1,0 +1,6 @@
+# Profile patch layer for @koanjan/dsh-plugin-boundary
+# Applied by dsh-app-boot as dsh.bundle.patch: inserts this package's cordis
+# plugin row into the composition.
+- insert:
+    - id: plugin-boundary
+      name: '@koanjan/dsh-plugin-boundary'

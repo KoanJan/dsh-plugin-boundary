@@ -1,0 +1,36 @@
+{
+  "name": "@koanjan/dsh-plugin-boundary",
+  "version": "0.1.0",
+  "description": "DSH plugin development boundary skill: platform capability boundaries (Client↔Host channels, filesystem limits, dynamic vs bundle lifecycle, install/debug rules)",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh",
+    "cordis",
+    "skill",
+    "plugin",
+    "boundary",
+    "plugin-development"
+  ],
+  "peerDependencies": {},
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}
